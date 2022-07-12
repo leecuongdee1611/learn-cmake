@@ -5,7 +5,7 @@ add_executable(${PROJECT_NAME} main.c)
 
 # Link include directory 
 target_include_directories(${PROJECT_NAME}
-	PUBLIC
+	PRIVATE
 		${PROJECT_SOURCE_DIR}/include
 )
 
