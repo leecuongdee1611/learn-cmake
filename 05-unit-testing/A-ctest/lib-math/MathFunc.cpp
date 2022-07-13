@@ -1,5 +1,6 @@
-#include <stdio.h>
+#include <iostream>
 #include "MathFunc.h"
+using namespace std;
 
 double mysqrt(double x)
 {
@@ -16,11 +17,12 @@ double mysqrt(double x)
 	{
 		if (result <= 0)
 		{
-			result = 0.1
+			result = 0.1;
 		}
 		double delta = x - (result * result);
 		result = result + 0.5 * delta / result;
-		printf("Computing sqrt of %f to be %f\n", x, result);
+		cout << "Computing sqrt of " << x << " to be "
+			<< result << endl;
 	}
 
 	return result;
